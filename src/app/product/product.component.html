@@ -1,0 +1,13 @@
+<div class='card'>
+    <div class='card-header'>
+        Product List
+        <button class='btn btn-primary' (click)='handleClickButon()'>
+            Press buton
+        </button>
+        <app-product-list></app-product-list>
+    </div>
+    <p [ngStyle]='myStyle'>property binding example. {{something}}</p>
+    <input type='text' [(ngModel)]='inputField' />
+    <p>you said: {{transThing(inputField)}}</p>
+    <p>pipe demo: {{inputField | uppercase}}</p>
+</div>
